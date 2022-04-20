@@ -8,4 +8,5 @@ function toAlternatingCase(str) {
 console.log(toAlternatingCase("HELLO"));
 console.log(toAlternatingCase("HellO"));
 console.log(toAlternatingCase("hello"));
+console.log(toAlternatingCase("helLo"));
 
