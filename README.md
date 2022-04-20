@@ -1,4 +1,4 @@
-# My daily coding challenges
+# CodeWars Challenges: <a target="_blank" href="https://www.codewars.com/users/TonyHerbert22ATX" >Visit Here</a> 
 
 This space is dedicated for my currently codewars progression, I like to keep track of every challenge that I overcome and I will do my best to go back, review my code and refactor with new and more efficient things that i've learned. 
 
@@ -8,7 +8,9 @@ https://github.com/TonyHerbert22ATX/CodeWars
 
 ## How It's Made:
 
-**Tech used:** Mainly JavaScript for now, will be adding frameworks along the way. 
+**Tech used:** <img src="https://img.shields.io/static/v1?label=|&message=JAVASCRIPT&color=3c7f5d&style=plastic&logo=javascript"/>
+
+Everyday, the first thing I do is solve a Codewar! 
 
 ## Optimizations
 
