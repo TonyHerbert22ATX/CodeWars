@@ -2,7 +2,7 @@
 
 This space is dedicated for my currently codewars progression, I like to keep track of every challenge that I overcome and I will do my best to go back, review my code and refactor with new and more efficient things that i've learned. 
 
-https://github.com/Ethodeus/js-coding-challenges
+https://github.com/TonyHerbert22ATX/CodeWars
 
 ![alt tag](https://www.codewars.com/users/TonyHerbert22ATX/badges/large)
 
