@@ -1,10 +1,9 @@
-function multipleOfIndex(array) {
-  function multipleOfIndex(arr) {
-    return arr.filter((x, i) => x % i === 0);
-  }
+function nameShuffler(str) {
+  let arr =str.split(' ')
+  return `${arr[1]} ${arr[0]}`
 }
 
-console.log(multipleOfIndex([22, -6, 32, 82, 9, 25]));
+console.log(nameShuffler('john McClain'));
 // console.log(nameShuffler(960000));
 // console.log(nameShuffler(-1050));
 // console.log(nameShuffler(105));
