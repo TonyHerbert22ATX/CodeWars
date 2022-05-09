@@ -12,4 +12,3 @@ console.log(
     return v > 9;
   })
 );
-Hitony herbert how are you ? Hitony herbert how are you ? Hitony herbert how are you ? 
