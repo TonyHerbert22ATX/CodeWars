@@ -1,14 +1,8 @@
-function array(arr) {
-  return arr.split(",").length < 3
-    ? null
-    : arr.split(",").slice(1, -1).join(" ");
+function amIWilson(p) {
+  return (p ===5 || p === 13 || p === 563)?true:false
 }
 
-console.log(array("1,2,3"));
-console.log(array("1,2,3,4"));
-
-function array(arr) {
-  return arr.split(",").length < 3
-    ? null
-    : arr.split(",").slice(1, -1).join(" ");
-}
+console.log(amIWilson(5));
+console.log(amIWilson(9));
+console.log(amIWilson(6));
+console.log(amIWilson(563));
