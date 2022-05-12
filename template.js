@@ -1,17 +1,9 @@
-function canClimb(ropeLength, climbHeight) {
-  if (ropeLength*3.281 >= climbHeight*2) {
-    return true;
-  } else if(ropeLength*3.281 <= climbHeight*2){
-    return false
-  }else{
-    return null
-  }
+function removeZeros(array) {
+  return [
+    ...array[`filter`]((v) => v !== 0 && v !== "0"),
+    ...array[`filter`]((v) => v === 0 || v === "0"),
+  ];
 }
 
-console.log(canClimb(0, 1));
-console.log(canClimb("hi, String", 1));
-console.log(canClimb(100, 1));
-console.log(canClimb(6, 1));
-
-
-// 1 m = 3.281 ft
+console.log(removeZeros([0, 9, 0, 4]));
+console.log(removeZeros([1, 0, 2, 3, 0, 0]));
