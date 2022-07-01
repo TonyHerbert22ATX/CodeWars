@@ -1,40 +1,26 @@
-function isValid(formula) {
-    if (formula.includes(7) || formula.includes(8)) {
-        if (formula.includes(1) && formula.includes(2)) {
-            return false;
-        }
-        if (formula.includes(3) && formula.includes(4)) {
-            return false;
-        }
-        if (formula.includes(5) && formula.includes(6)) {
-            return true;
-        }
-        if (formula.includes(5) && !formula.includes(6)) {
-            return false;
-        }
-        if (!formula.includes(5) && formula.includes(6)) {
-            return false;
-        }
-        return true;
+//? THIS WAS CORRECT>>>>> NOT SURE WHY CODEWARS DOES NOT ACCEPT IT
+// function nextItem(xs, item) {
+//     if (typeof xs != "object") {
+//         let a = xs.split("").findIndex((x) => x === item);
+//         console.log(a);
+//         return a === -1 ? undefined : xs[a + 1];
+//     } else {
+//         let b = xs.findIndex((x) => x === item);
+//         console.log(b);
+//         return b === -1 ? undefined : xs[b + 1];
+//     }
+// }
+
+function nextItem(test, item) {
+    let found = false;
+    for (let x of test) {
+        if (found) return x;
+        if (x == item) found = true;
     }
-    return false;
+    return undefined;
 }
 
-console.log(isValid([1, 3, 7]));
-// t;
-console.log(isValid([1, 3, 7, 2]));
-// f;
-console.log(isValid([1, 3, 7, 5]));
-// f;
-console.log(isValid([1, 5, 6, 7, 3]));
-// t;
-console.log(isValid([5, 6, 7, 8]));
-// t;
-console.log(isValid([5, 6, 7]));
-// t;
-console.log(isValid([5, 6, 7, 8]));
-// t;
-console.log(isValid([6, 7, 8]));
-// f;
-console.log(isValid([7, 8]));
-// t;
+console.log(nextItem([1, 2, 3, 4, 5, 6, 7, 8], 5));
+console.log(nextItem(["a", "b", "c"], "t"));
+console.log(nextItem(["a", "b", "c"], "c"));
+console.log(nextItem("testing", "t"));
