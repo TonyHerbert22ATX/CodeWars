@@ -1,12 +1,6 @@
-function digitalRoot(n) {
-    while (String(n).length > 1) {
-        n = n
-            .toString()
-            .split("")
-            .reduce((a, c) => a + +c, 0);
-    }
-    return n;
+function createPhoneNumber(numbers){
+  let digits = numbers.splice(3)
+  return `(${numbers.join('')}) ${digits.slice(0,3).join('')}-${digits.slice(-4).join('')}`
 }
 
-console.log(digitalRoot(16));
-console.log(digitalRoot(456));
+console.log(createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]));
