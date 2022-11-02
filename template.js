@@ -1,18 +1,25 @@
-// array of integers.... always a #. No funny business.
-// -1 women... 1 man
+// string of words.... english letters... no special, funny business. 
 
-// T||F 
+// an array of words... sorted alphabeticlaly by final char
+// 2 same last letter... show in order appearence. 
 
 
-function inviteMoreWomen(L){
-    // break down into 2 group (man & women)
-    let woman = L.filter((num)=> num < 0).length
-    let man = L.filter((num)=> num > 0).length
-    return man > woman 
+
+function last(string){
+    // find last char in string words & sort
+        return string.split(' ').sort((a,z)=> {
+            if(a[a.length - 1] > z[z.length - 1]){
+                return 1
+            }else if(a[a.length - 1] < z[z.length - 1]){
+                return -1
+            }else{
+                return 0
+            }
+        })
 }
 
 
-console.log(inviteMoreWomen([1,-1,1]), 'true');
-console.log(inviteMoreWomen([1,1,1]), 'true');
-console.log(inviteMoreWomen([-1,-1,-1]), 'false');
-console.log(inviteMoreWomen([1,-1]), 'false');
+
+
+
+console.log(last('man i need a taxi up to ubud'), `['a', 'need', 'ubud', 'i', 'taxi', 'man', 'to', 'up']`);
