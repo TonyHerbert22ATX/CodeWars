@@ -1,0 +1,15 @@
+.div-container{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+button, input{
+    padding: 10px;
+    margin: 0 10%;
+    background: purple;
+    color: white;
+}
+h1{
+    display: flex;
+    justify-content: center;
+}
